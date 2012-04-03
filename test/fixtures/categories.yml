@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parent_id: 1
+  title: MyString
+  name: MyString
+  alias: MyString
+  section: MyString
+  description: MyText
+  published: 1
+  checked_out: 1
+  checked_out_time: 2012-04-03 13:39:04
+  editor: MyString
+  ordering: 1
+  access: 1
+  count: 1
+  params: MyText
+
+two:
+  parent_id: 1
+  title: MyString
+  name: MyString
+  alias: MyString
+  section: MyString
+  description: MyText
+  published: 1
+  checked_out: 1
+  checked_out_time: 2012-04-03 13:39:04
+  editor: MyString
+  ordering: 1
+  access: 1
+  count: 1
+  params: MyText
