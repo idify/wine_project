@@ -1,0 +1,28 @@
+<div id="footer" style="position: relative; z-index: 999;">
+		<div class="footer_holder">
+			<div class="space20"></div>
+			<div class="footer_navigation">
+				<ul class="menu"><li class="item8 first"><a href="http://www.bruichladdich.com/distillery-tours-visits" alt="distillery-tours"><span>Distillery Tours</span></a></li><li class="item9"><a href="/contact" alt="contact"><span>Contact</span></a></li><li class="item10"><a href="/site-map" alt="site-map"><span>Site Map</span></a></li><li class="item11"><a href="/terms-and-conditions" alt="terms"><span>Terms</span></a></li><li class="item12"><a href="http://www.bruichladdich.com/trade" alt="trade"><span>Trade</span></a></li><li class="item13" style="background-image: url(https://www.bruichladdich.com/templates/bruichladdich/images/top_menu_trans.png); "><a href="http://www.bruichladdich.com/credits" alt="credits" class="light"><span>Credits</span></a></li><li class="item14" style="background-image: url(https://www.bruichladdich.com/templates/bruichladdich/images/top_menu_trans.png); "><a href="http://www.bruichladdich.com/savour" alt="savour-the-flavour" class="light"><span>Savour the flavour</span></a></li><li class="item34" style="background-image: url(https://www.bruichladdich.com/templates/bruichladdich/images/top_menu_trans.png); "><a href="http://www.bruichladdich.com/copyright" alt="copyright" class="light"><span>©BDCL 2012 SITE CREATED BY SUPERCULTURE</span></a></li></ul>
+				<script type="text/javascript">
+					var i = jQuery('.footer_navigation ul');
+					var elem = jQuery(i);
+					var index_ul = elem.children("li").length;
+					jQuery('.footer_navigation ul li:nth-child('+index_ul+') a').addClass('light');
+					var ante = index_ul - 2;
+					var ante2 = ante+1;
+					jQuery('.footer_navigation ul li:nth-child(1)').addClass('first');
+					jQuery('.footer_navigation ul li:nth-child('+index_ul+') a').addClass('light');
+					jQuery('.footer_navigation ul li:nth-child('+index_ul+')').css('background-image','url("/templates/bruichladdich/images/top_menu_trans.png")');
+					jQuery('.footer_navigation ul li:nth-child('+ante+') a').addClass('light');
+					jQuery('.footer_navigation ul li:nth-child('+ante+')').css('background-image','url("/templates/bruichladdich/images/top_menu_trans.png")');
+					jQuery('.footer_navigation ul li:nth-child('+ante2+') a').addClass('light');
+					jQuery('.footer_navigation ul li:nth-child('+ante2+')').css('background-image','url("/templates/bruichladdich/images/top_menu_trans.png")');
+				</script>    
+			</div>
+			<div class="social_links">
+								<ul>
+					<li><a target="_blank" href="/news/feed/rss"><%=image_tag "rss_icon.png" %></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>

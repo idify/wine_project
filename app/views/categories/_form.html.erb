@@ -1,0 +1,79 @@
+<%= form_for(@category) do |f| %>
+  <div id= "category_errors" style="display:none"></div>
+  <p>
+    <%= f.label :parent_id %>
+    <%= f.select :parent_id, options_for_select([["Teacher", "t"], ["Student", "s"]])%>
+  </p>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :alias %>
+    <%= f.text_field :alias %>
+  </p>
+  <p>
+    <%= f.label :section %>
+    <%= f.text_field :section %>
+  </p>
+  <p>
+    <%= f.label :published %>
+    <%= f.text_field :published %>
+  </p>
+  <p>
+    <%= f.label :checked_out %>
+    <%= f.text_field :checked_out %>
+  </p>
+  <p>
+    <%= f.label :editor %>
+    <%= f.text_field :editor %>
+  </p>
+  <p>
+    <%= f.label :ordering %>
+    <%= f.text_field :ordering %>
+  </p>
+  <p>
+    <%= f.label :access %>
+    <%= f.text_field :access %>
+  </p>
+  <p>
+    <%= f.label :count %>
+    <%= f.text_field :count %>
+  </p>
+  <p>
+    <%= f.label :params %>
+    <%= f.text_field :params %>
+  </p>
+  <!--<p>
+    <%= form_tag '/upload', :multipart => true do %>
+      <label for="file">Image URL</label> <%= file_field_tag "file" %>
+    <% end %>-->
+  </p>
+  <p>
+    <%= f.label :is_alcoholic %>
+    <%= f.radio_button :is_alcoholic, 'true', :checked => true %> Yes
+    <%= f.radio_button :is_alcoholic, 'false' %> No
+  </p>
+  <p>
+    <%= f.label :is_taxable %>
+    <%= f.radio_button :is_taxable, 'true', :checked => true %> Yes
+    <%= f.radio_button :is_taxable, 'false' %> No
+  </p>
+  <p>
+    <%= f.label :seo_page_title %>
+    <%= f.text_field :seo_page_title %>
+  </p>
+  <p>
+    <%= f.label :meta_description %>
+    <%= f.text_field :meta_description %>
+  </p>
+  <p>
+    <%= f.label :template_id %>
+    <%= f.text_field :template_id %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

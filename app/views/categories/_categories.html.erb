@@ -1,0 +1,60 @@
+<div class="content">
+  <div style="position: absolute;" id="err_o">
+  </div>
+
+  <div id="categories_list">
+    <table>
+      <tbody>
+        <tr>
+          <th>Parent | </th>
+          <th>Title | </th>
+          <th>Name | </th>
+          <th>Alias | </th>
+          <th>Section | </th>
+          <th>Description | </th>
+          <th>Published | </th>
+          <th>Checked_Out | </th>
+          <th>Editor | </th>
+          <th>Ordering | </th>
+          <th>Count | </th>
+          <th>Access | </th>
+          <th>Params | </th>
+          <th>Image_URL | </th>
+          <th>is_Alcoholic | </th>
+          <th>is_Taxable | </th>
+          <th>SEO_Page_Title | </th>
+          <th>Meta_Description | </th>
+          <th>Template_ID</th>
+        </tr>
+
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.parent_id %></td>
+            <td><%= category.title %></td>
+            <td><%= category.name %></td>
+            <td><%= category.alias %></td>
+            <td><%= category.section %></td>
+            <td><%= category.description %></td>
+            <td><%= category.published %></td>
+            <td><%= category.checked_out %></td>
+            <td><%= category.editor %></td>
+            <td><%= category.ordering %></td>
+            <td><%= category.access %></td>
+            <td><%= category.count %></td>
+            <td><%= category.params %></td>
+            <td><%= category.image_url %></td>
+            <td><%= category.is_alcoholic %></td>
+            <td><%= category.is_taxable %></td>
+            <td><%= category.seo_page_title %></td>
+            <td><%= category.meta_description %></td>
+            <td><%= category.template_id %></td>
+            <td><%= link_to "Edit", edit_category_path(category) %></td>
+            <td><%= link_to "Destroy", category, :remote => true, :confirm => 'Are you sure?', :method => :delete %></td>
+           
+          </tr>
+          
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

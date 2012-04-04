@@ -2,13 +2,21 @@
 <html>
 <head>
   <title>Wine</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "application",:media => "all" %>
+  <%= javascript_include_tag 'jquery-1.7.2.js' %>
+  <%= javascript_include_tag 'rails' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="phd">
+<div id="wrap" style="position: relative;">
+	<div id="main" style="position: relative; z-index: 999;" class="">
+    <%=render :partial=>"layouts/header"%>
 
-<%= yield %>
+    <%= yield %>
+  </div>
+</div>  
 
+<%=render :partial=>"layouts/footer" %>
+</div>
 </body>
 </html>
